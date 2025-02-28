@@ -19,7 +19,7 @@ exit 0
 fi
 }
 IZIN=$(curl -sS https://raw.githubusercontent.com/YINNSTORE/izinvps/main/ip | awk '{print $4}' | grep $MYIP)
-#if [ $MYIP = $IZIN ]; then
+if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else
 echo "Akses di tolak!! Silakan Hubungi Admin";
